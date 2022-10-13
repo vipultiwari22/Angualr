@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="user">
+        <div class="row">
+            <button><a routerLink="add">ADD Employee Data</a></button>
+            <button><a routerLink="view">view Employee  Data</a></button>
+        </div>
+    </div>
+    <div class="h3">
+        <h3>Services</h3>
+        <div class="accordian" id="f1" (click)="accordian('f1')">Service 1</div>
+        <div class="content" *ngIf="id === 'f1'"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, obcaecati nisi dolores deleniti eum nulla facilis debitis quibusdam et. Sunt nulla non nisi maxime exercitationem optio corrupti eveniet, iste expedita.
+            Et quia commodi perspiciatis, voluptates necessitatibus reiciendis ipsum? Nihil natus animi neque ut autem deserunt. Blanditiis hic sapiente, maxime sit corporis sunt, deleniti, impedit nulla temporibus debitis eveniet unde cum.</p></div>
+
+        <div class="accordian" id="f2" (click)="accordian('f2')">Service 2</div>
+        <div class="content" *ngIf="id === 'f2'"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, obcaecati nisi dolores deleniti eum nulla facilis debitis quibusdam et. Sunt nulla non nisi maxime exercitationem optio corrupti eveniet, iste expedita.
+            Et quia commodi perspiciatis, voluptates necessitatibus reiciendis ipsum? Nihil natus animi neque ut autem deserunt. Blanditiis hic sapiente, maxime sit corporis sunt, deleniti, impedit nulla temporibus debitis eveniet unde cum.</p></div>
+        
+        <div class="accordian" id="f3" (click)="accordian('f3')">Service 3</div>
+        <div class="content" *ngIf="id === 'f3'"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, obcaecati nisi dolores deleniti eum nulla facilis debitis quibusdam et. Sunt nulla non nisi maxime exercitationem optio corrupti eveniet, iste expedita.
+            Et quia commodi perspiciatis, voluptates necessitatibus reiciendis ipsum? Nihil natus animi neque ut autem deserunt. Blanditiis hic sapiente, maxime sit corporis sunt, deleniti, impedit nulla temporibus debitis eveniet unde cum.</p></div>
+
+        <div class="accordian" id="f4" (click)="accordian('f4')">Service 4</div>
+        <div class="content" *ngIf="id === 'f4'"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, obcaecati nisi dolores deleniti eum nulla facilis debitis quibusdam et. Sunt nulla non nisi maxime exercitationem optio corrupti eveniet, iste expedita.
+        Et quia commodi perspiciatis, voluptates necessitatibus reiciendis ipsum? Nihil natus animi neque ut autem deserunt. Blanditiis hic sapiente, maxime sit corporis sunt, deleniti, impedit nulla temporibus debitis eveniet unde cum.</p></div>
+    </div>
+        <router-outlet></router-outlet>
+</body>
+</html>
